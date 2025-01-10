@@ -7,11 +7,6 @@ let purple = Spices.color "#800080"
 let cyan = Spices.color "#00B2FF"
 let colors = [| cyan; blue; orange; yellow; green; purple; red |]
 
-type matrix_construction = {
-  constructed : bool BatDeque.t BatDeque.t;
-  last_line : bool BatDeque.t;
-}
-
 type shape = bool array array
 
 let matrix_of_str (s : string) : shape =
