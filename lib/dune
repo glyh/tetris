@@ -1,0 +1,8 @@
+(library
+ (name libtetris)
+
+ (libraries
+   batteries spices)
+
+ (preprocess (pps ppx_deriving.enum)))
+ 
