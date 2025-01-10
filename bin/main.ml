@@ -188,5 +188,6 @@ let view model =
     (if model.dead then "Press R to restart" else "")
 
 let () =
+  Random.self_init ();
   Minttea.app ~init ~update ~view ()
   |> Minttea.start ~initial_model:(create_model ())
